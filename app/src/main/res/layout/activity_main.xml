@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dice"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you are admin click the card..."
+            android:textAlignment="center"/>
+
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="change state"
+            android:layout_gravity="center"
+
+            android:layout_margin="15dp"
+            android:id="@+id/go_to_scrollID"/>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/sv_login_view_id"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/admin_email_id"
+
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:hint="Email Address"/>
+            <EditText
+
+                android:layout_marginTop="5dp"
+                android:id="@+id/admin_password_id"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:hint="*********"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_gravity="center"
+
+
+                android:layout_margin="15dp"
+                android:id="@+id/admin_login_button"/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="change"
+                android:layout_gravity="center"
+
+
+                android:layout_margin="15dp"
+                android:id="@+id/check_statusID"/>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
